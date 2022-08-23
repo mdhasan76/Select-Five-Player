@@ -39,4 +39,9 @@
         height: 100px;
         overflow-y: scroll;
     }
+
+    .res-padding {
+        box-sizing: border-box;
+        margin: 10px;
+    }
 }
