@@ -1,3 +1,7 @@
+body {
+    background: #f7f7f7;
+}
+
 .banner {
     padding: 120px 0;
     background-image: url(/image/banner1.jpg);
@@ -28,6 +32,10 @@
 
 .aside-height {
     height: 250px;
+}
+
+.res-padding {
+    box-shadow: 9px 9px 4px 4px #e7e7e7;
 }
 
 @media (max-width:576px) {
