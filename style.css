@@ -1,6 +1,5 @@
 .banner {
     padding: 120px 0;
-
     background-image: url(/image/banner1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -29,4 +28,15 @@
 
 .aside-height {
     height: 250px;
+}
+
+@media (max-width:576px) {
+    .banner {
+        padding: 50px 20px;
+    }
+
+    .banner-p {
+        height: 100px;
+        overflow-y: scroll;
+    }
 }
