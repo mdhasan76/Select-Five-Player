@@ -30,7 +30,10 @@ document.getElementById('player-expenses-btn').addEventListener('click', functio
 
 
     if (isNaN(perPlayerExpenses)) {
-        return alert('Please enter Valid number . we don\'t accept any text')
+        return alert('Please enter Valid number . we don\'t accept any text');
+    }
+    else if (perPlayerExpenses < 0) {
+        return alert('Please enter Intiger number . we don\'t accept nagetive number');
     }
 
     playerCost.innerText = perPlayerExpenses * arr.length;
@@ -50,6 +53,9 @@ document.getElementById('total-cost').addEventListener('click', function () {
 
     if (isNaN(managerCost) || isNaN(coachCost)) {
         return alert('Please enter Valid number . we don\'t accept any text')
+    }
+    else if (managerCost < 0 || coachCost < 0) {
+        return alert('Please enter Intiger number . we don\'t accept nagetive number');
     }
 
     totalCostId.innerText = total;
